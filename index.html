@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Mirsa — Software Engineer</title>
+  <meta name="description" content="Software Engineer with 4+ years of experience building mobile and web applications, with a focus on cross-platform engineering, native platforms, and reliable digital products.">
+  <meta name="author" content="Mohammed Mirsa">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mohammed Mirsa — Software Engineer">
+  <meta property="og:description" content="Software Engineer with 4+ years of experience in cross-platform mobile and web applications, native platforms, and reliable product engineering.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon: Minimal Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2320211F' rx='6'/><text x='16' y='21' font-family='sans-serif' font-size='14' font-weight='600' fill='%23F7F6F2' text-anchor='middle'>MM</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/editorial.css">
+</head>
+<body>
+
+  <!-- Minimal Sticky Navigation -->
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand" aria-label="Mohammed Mirsa Home">
+        <span class="nav-brand-dot"></span>
+        <span>Mohammed Mirsa</span>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav role="navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#approach" class="nav-link">Approach</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><button class="nav-resume-btn" onclick="openResumeModal()">Resume</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-meta">
+        <span class="hero-label">Software Engineer · Product Engineering</span>
+      </div>
+
+      <h1 id="hero-title" class="hero-headline">
+        Building thoughtful software.<br>Solving real problems.
+      </h1>
+
+      <p class="hero-summary">
+        I'm a Software Engineer with 4+ years of experience building mobile and web applications, with a focus on cross-platform engineering, native platforms, and reliable digital products.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#work" class="hero-action-link">Explore my work <span>↓</span></a>
+        <a href="#contact" class="hero-action-link">Get in touch <span>→</span></a>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Selected Work -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <span class="section-label">Selected Work</span>
+      <h2 id="work-title" class="section-title">Products & Applications</h2>
+      <p class="section-description">
+        A curated selection of production applications engineered across fintech, enterprise CRM and POS, securities trading, and digital client onboarding.
+      </p>
+
+      <div class="project-list">
+
+        <!-- Project 1: AlfaPay Mobile App -->
+        <article class="project-item">
+          <div class="project-header">
+            <div class="project-title-area">
+              <h3 class="project-title">AlfaPay Mobile App</h3>
+              <span class="project-domain">FinTech & Cross-Border Remittance</span>
+            </div>
+            <span class="project-platform">iOS · Android · Huawei</span>
+          </div>
+
+          <p class="project-description">
+            A comprehensive digital banking and international remittance platform engineered in the UAE, delivering real-time money transfers across more than 100 countries with transparent fees and live exchange rate tracking.
+          </p>
+
+          <div class="project-contribution-block">
+            <div class="project-contribution-title">Engineering Contribution</div>
+            <p class="project-contribution-text">
+              Architected and engineered high-security client flows. Integrated UAE Pass national authentication, Aani instant mobile transfers, utility billing settlements, and prepaid travel card and Wages Protection System (WPS) card management.
+            </p>
+          </div>
+
+          <div class="project-meta-row">
+            <div class="project-tech-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">UAE Pass</span>
+              <span class="tag">Aani Transfers</span>
+              <span class="tag">Huawei HMS</span>
+              <span class="tag">REST APIs</span>
+            </div>
+            <button class="project-details-btn" onclick="openProjectModal('alfapay')">
+              Engineering Details <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2: Snapp POS -->
+        <article class="project-item">
+          <div class="project-header">
+            <div class="project-title-area">
+              <h3 class="project-title">Snapp POS</h3>
+              <span class="project-domain">Enterprise CRM, POS & ERP</span>
+            </div>
+            <span class="project-platform">Android · Web</span>
+          </div>
+
+          <p class="project-description">
+            Cross-platform CRM, Point of Sale, and ERP system for end-to-end commercial operations including retail billing, inventory management, customer tracking, and reporting. Built for Android tablets and desktop web viewports.
+          </p>
+
+          <div class="project-contribution-block">
+            <div class="project-contribution-title">Engineering Contribution</div>
+            <p class="project-contribution-text">
+              Built responsive layouts adapted for tablet and desktop screens. Implemented the Bloc pattern for deterministic state management, integrated backend REST APIs, and enabled offline operational resilience using Hive local database.
+            </p>
+          </div>
+
+          <div class="project-meta-row">
+            <div class="project-tech-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Bloc</span>
+              <span class="tag">Hive</span>
+              <span class="tag">Offline Support</span>
+              <span class="tag">REST APIs</span>
+            </div>
+            <button class="project-details-btn" onclick="openProjectModal('snapp-pos')">
+              Engineering Details <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3: Flip by Geojit -->
+        <article class="project-item">
+          <div class="project-header">
+            <div class="project-title-area">
+              <h3 class="project-title">Flip by Geojit</h3>
+              <span class="project-domain">Financial Securities & Trading</span>
+            </div>
+            <span class="project-platform">Android · iOS</span>
+          </div>
+
+          <p class="project-description">
+            Flagship mobile trading and investment platform serving active market investors with real-time stock feeds, technical charting, and streamlined order execution.
+          </p>
+
+          <div class="project-contribution-block">
+            <div class="project-contribution-title">Engineering Contribution</div>
+            <p class="project-contribution-text">
+              Served as developer and technical researcher, exploring emerging technologies, evaluating architectural feasibility, and advising on project solutions during the transition from legacy trading applications.
+            </p>
+          </div>
+
+          <div class="project-meta-row">
+            <div class="project-tech-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Real-Time Feeds</span>
+              <span class="tag">Trading Systems</span>
+              <span class="tag">R&D</span>
+            </div>
+            <button class="project-details-btn" onclick="openProjectModal('flip-geojit')">
+              Engineering Details <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 4: Hello Geojit -->
+        <article class="project-item">
+          <div class="project-header">
+            <div class="project-title-area">
+              <h3 class="project-title">Hello Geojit</h3>
+              <span class="project-domain">FinTech & Client Onboarding</span>
+            </div>
+            <span class="project-platform">Android · Web</span>
+          </div>
+
+          <p class="project-description">
+            Digital client onboarding platform in the Flutter framework, enabling streamlined, paperless identity verification and registration for financial securities accounts.
+          </p>
+
+          <div class="project-contribution-block">
+            <div class="project-contribution-title">Engineering Contribution</div>
+            <p class="project-contribution-text">
+              Played a key role in technical research and development by exploring new technologies, evaluating technical feasibility, proposing architectural solutions, and actively contributing to the mobile and web application codebase.
+            </p>
+          </div>
+
+          <div class="project-meta-row">
+            <div class="project-tech-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Web & Mobile</span>
+              <span class="tag">Digital KYC</span>
+              <span class="tag">Technical R&D</span>
+            </div>
+            <button class="project-details-btn" onclick="openProjectModal('hello-geojit')">
+              Engineering Details <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 5: Easy Card -->
+        <article class="project-item">
+          <div class="project-header">
+            <div class="project-title-area">
+              <h3 class="project-title">Easy Card</h3>
+              <span class="project-domain">ePOS Hardware & Printing</span>
+            </div>
+            <span class="project-platform">Android ePOS Hardware</span>
+          </div>
+
+          <p class="project-description">
+            Recharge card purchasing and payment application deployed in Saudi Arabia, engineered specifically for commercial ePOS hardware machines.
+          </p>
+
+          <div class="project-contribution-block">
+            <div class="project-contribution-title">Engineering Contribution</div>
+            <p class="project-contribution-text">
+              Served as Lead Developer and ongoing maintainer. Architected client software, integrated with specialized ePOS hardware, and implemented Bluetooth thermal printer integration to output bills and voucher receipts immediately upon purchase.
+            </p>
+          </div>
+
+          <div class="project-meta-row">
+            <div class="project-tech-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">ePOS Machines</span>
+              <span class="tag">Bluetooth Thermal Printer</span>
+              <span class="tag">E-commerce</span>
+            </div>
+            <button class="project-details-btn" onclick="openProjectModal('easy-card')">
+              Engineering Details <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 6: Sipo Cloud POS -->
+        <article class="project-item">
+          <div class="project-header">
+            <div class="project-title-area">
+              <h3 class="project-title">Sipo Cloud POS</h3>
+              <span class="project-domain">Restaurant Administration & Inventory</span>
+            </div>
+            <span class="project-platform">Mobile · Web</span>
+          </div>
+
+          <p class="project-description">
+            Administrative platform for multi-outlet restaurant businesses, covering staff oversight, inventory control, and operational analytics.
+          </p>
+
+          <div class="project-contribution-block">
+            <div class="project-contribution-title">Engineering Contribution</div>
+            <p class="project-contribution-text">
+              Built mobile and web administration screens, implemented staff management workflows, created inventory tracking logic, and developed daily, weekly, monthly, and yearly business reporting views.
+            </p>
+          </div>
+
+          <div class="project-meta-row">
+            <div class="project-tech-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Inventory Analytics</span>
+              <span class="tag">Administrative Portals</span>
+              <span class="tag">Mobile & Web</span>
+            </div>
+            <button class="project-details-btn" onclick="openProjectModal('sipo-pos')">
+              Engineering Details <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Additional Verified Projects Archive -->
+      <div class="archive-section">
+        <button class="archive-toggle-btn" id="archive-toggle-btn" onclick="toggleArchive()">
+          View 6 additional verified projects from resume ↓
+        </button>
+
+        <div class="archive-content" id="archive-content">
+          <table class="archive-table">
+            <thead>
+              <tr>
+                <th style="width: 28%;">Project</th>
+                <th style="width: 22%;">Domain & Platform</th>
+                <th style="width: 38%;">Verified Scope & Contribution</th>
+                <th style="width: 12%;">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="archive-project-name">Selfie Geojit</span>
+                  <span class="tag">Obj-C · Java</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Native Mobile Trading<br>iOS & Android</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Served as sole developer and maintainer after team departure. Ensured ongoing live operations until migration to FLIP.</span>
+                </td>
+                <td>
+                  <button class="project-details-btn" onclick="openProjectModal('selfie-geojit')">Details ↗</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="archive-project-name">HomeeGram</span>
+                  <span class="tag">Flutter · Dart</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Home Design & Materials<br>Mobile</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Social media application showcasing trending home designs and materials, nearest verified experts, and a marketplace for home needs.</span>
+                </td>
+                <td>
+                  <button class="project-details-btn" onclick="openProjectModal('homeegram')">Details ↗</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="archive-project-name">25Years More</span>
+                  <span class="tag">Flutter · Dart</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Senior Community<br>Mobile</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Social media platform for retirees, enabling community exploration and social event discovery within their circle.</span>
+                </td>
+                <td>
+                  <button class="project-details-btn" onclick="openProjectModal('retire-25years')">Details ↗</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="archive-project-name">Xtrade By UAE Exchange</span>
+                  <span class="tag">Java · Obj-C</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Brokerage Trading<br>Android & iOS</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Developer and maintainer for UAE Exchange brokerage firm. Fixed platform bugs and implemented functionality enhancements.</span>
+                </td>
+                <td>
+                  <button class="project-details-btn" onclick="openProjectModal('xtrade-uae')">Details ↗</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="archive-project-name">DBFS INET</span>
+                  <span class="tag">Java · Obj-C</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Institutional Trading<br>Android & iOS</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Developer and maintainer for Doha Brokerage and Financial Services. Maintained stability and implemented new features.</span>
+                </td>
+                <td>
+                  <button class="project-details-btn" onclick="openProjectModal('dbfs-inet')">Details ↗</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="archive-project-name">DrSar</span>
+                  <span class="tag">Flutter · Dart</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Healthcare Appointments<br>Mobile</span>
+                </td>
+                <td>
+                  <span class="archive-project-desc">Lead Developer and project manager. Gathered and analyzed requirements from client through to full development.</span>
+                </td>
+                <td>
+                  <button class="project-details-btn" onclick="openProjectModal('drsar')">Details ↗</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Professional Experience -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <span class="section-label">Career Timeline</span>
+      <h2 id="experience-title" class="section-title">Work Experience</h2>
+      <p class="section-description">
+        4+ years of hands-on software engineering across fintech, enterprise systems, and securities trading firms.
+      </p>
+
+      <div class="experience-list">
+
+        <!-- Role 1: M2H Infotech -->
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3 class="experience-role">Lead Software Engineer</h3>
+            <span class="experience-period">Present</span>
+          </div>
+          <div class="experience-company">M2H Infotech Pvt Ltd</div>
+          <ul class="experience-bullets">
+            <li>Leading mobile application development strategies, overseeing architecture design, and mentoring development teams.</li>
+            <li>Architecting and engineering high-security, scalable cross-platform fintech applications utilizing the Flutter framework.</li>
+            <li>Driving technical research and feasibility studies to optimize app performance and integrate complex payment gateways.</li>
+          </ul>
+        </article>
+
+        <!-- Role 2: Suntech Business Solutions -->
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3 class="experience-role">Software Engineer</h3>
+            <span class="experience-period">Aug 2024 – Nov 2024</span>
+          </div>
+          <div class="experience-company">Suntech Business Solutions Pvt Ltd</div>
+          <ul class="experience-bullets">
+            <li>Developing mobile and web versions of enterprise CRM and POS applications using Flutter.</li>
+            <li>Building responsive and high-performance cross-platform applications targeting Android, iOS, and web.</li>
+            <li>Collaborating with product and design teams to ensure seamless user experience and functional accuracy.</li>
+          </ul>
+        </article>
+
+        <!-- Role 3: Geojit Technologies -->
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3 class="experience-role">Software Engineer</h3>
+            <span class="experience-period">Jan 2023 – Aug 2024</span>
+          </div>
+          <div class="experience-company">Geojit Technologies PVT LTD</div>
+          <ul class="experience-bullets">
+            <li>Developed and maintained mobile applications using Dart and Flutter for cross-platform development.</li>
+            <li>Managed native Android and iOS mobile applications to ensure optimal performance and user experience.</li>
+            <li>Acted as a key resource in identifying and resolving critical issues, demonstrating problem-solving skills and conducting thorough research when needed.</li>
+          </ul>
+        </article>
+
+        <!-- Role 4: Rootsys International -->
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3 class="experience-role">Mobile App Developer</h3>
+            <span class="experience-period">Sep 2021 – Dec 2022</span>
+          </div>
+          <div class="experience-company">Rootsys International</div>
+          <ul class="experience-bullets">
+            <li>Worked as a Mobile App Developer cum Trainer for students, providing hands-on training and guidance.</li>
+            <li>Demonstrated problem-solving skills by finding solutions for various technical issues.</li>
+            <li>Conducted research to stay updated with the latest trends and technologies in mobile app development.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- About Me -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <span class="section-label">Background</span>
+      <h2 id="about-title" class="section-title">About Me</h2>
+
+      <div class="about-narrative">
+        <p>
+          I am a <strong>Software Engineer</strong> with over four years of comprehensive experience designing, developing, and maintaining mobile and web applications. My background spans cross-platform engineering with <strong>Flutter and Dart</strong>, native Android development with <strong>Java and Kotlin</strong>, and native iOS development with <strong>Objective-C</strong>.
+        </p>
+        <p>
+          Much of my professional work has been concentrated in domain-heavy environments—fintech, digital banking, securities trading, and enterprise CRM/POS systems. These domains demand zero-tolerance for data inconsistencies, strict compliance with national identity and payment rails (such as UAE Pass and Aani), and resilient offline-first architectures.
+        </p>
+        <p>
+          Throughout my career, I have stepped into critical technical roles: from architecting high-security remittance systems and mentoring engineering teams at M2H Infotech, to taking sole operational ownership of production trading applications at Geojit Technologies following team departures. I view software engineering not merely as writing widgets, but as understanding product requirements thoroughly, making sensible architectural decisions, and ensuring reliable application behavior throughout its lifecycle.
+        </p>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Technical Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <span class="section-label">Capabilities</span>
+      <h2 id="skills-title" class="section-title">Technical Skills</h2>
+      <p class="section-description">
+        Core technologies, methodologies, and platforms verified through four years of production engineering.
+      </p>
+
+      <div class="skills-container">
+
+        <div class="skills-group">
+          <div class="skills-group-title">Programming Languages</div>
+          <div class="skills-group-items">Dart, Java, JavaScript, Kotlin, Objective-C</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Frameworks & Libraries</div>
+          <div class="skills-group-items">Flutter, Node.js</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Backend & Cloud Services</div>
+          <div class="skills-group-items">Firebase (Authentication, Cloud Messaging, Real-time Database, Cloud Storage), Supabase</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Databases</div>
+          <div class="skills-group-items">MySQL, MongoDB</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">UI/UX & Version Control</div>
+          <div class="skills-group-items">Responsive Design (Figma), Git, SVN</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Delivery & Methodologies</div>
+          <div class="skills-group-items">Azure, Jira, Scrum, Agile, CI/CD (Codemagic, GitHub Actions, Bitrise)</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Testing & Debugging</div>
+          <div class="skills-group-items">Debugging Tools, Unit Testing, Integration Testing</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Operating Systems</div>
+          <div class="skills-group-items">Linux, Windows, macOS</div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Engineering Approach -->
+    <section id="approach" class="section" aria-labelledby="approach-title">
+      <span class="section-label">Philosophy</span>
+      <h2 id="approach-title" class="section-title">Engineering Approach</h2>
+      <p class="section-description">
+        Principles cultivated through building and maintaining production systems in high-stakes environments.
+      </p>
+
+      <div class="approach-grid">
+
+        <div class="approach-card">
+          <span class="approach-num">01</span>
+          <h3 class="approach-title">Technical Research & Feasibility</h3>
+          <p class="approach-desc">
+            Evaluating platform constraints, third-party SDKs, and payment gateways through structured feasibility studies before committing to production architectures.
+          </p>
+        </div>
+
+        <div class="approach-card">
+          <span class="approach-num">02</span>
+          <h3 class="approach-title">Practical Problem-Solving</h3>
+          <p class="approach-desc">
+            Selecting straightforward, maintainable engineering patterns over trendy abstractions. Prioritizing clarity, predictability, and ease of debugging.
+          </p>
+        </div>
+
+        <div class="approach-card">
+          <span class="approach-num">03</span>
+          <h3 class="approach-title">Production Stewardship</h3>
+          <p class="approach-desc">
+            Treating maintenance with the same rigor as greenfield builds. Diagnosing critical production defects swiftly to preserve system uptime and user trust.
+          </p>
+        </div>
+
+        <div class="approach-card">
+          <span class="approach-num">04</span>
+          <h3 class="approach-title">Cross-Platform Architecture</h3>
+          <p class="approach-desc">
+            Building unified codebases that share core logic while respecting individual platform nuances across Android, iOS, web, and specialized hardware.
+          </p>
+        </div>
+
+        <div class="approach-card">
+          <span class="approach-num">05</span>
+          <h3 class="approach-title">Native Bridge & Hardware</h3>
+          <p class="approach-desc">
+            Seamlessly extending cross-platform frameworks into native code using platform channels for Bluetooth thermal printing, ePOS integration, and system biometrics.
+          </p>
+        </div>
+
+        <div class="approach-card">
+          <span class="approach-num">06</span>
+          <h3 class="approach-title">Mentoring & Collaboration</h3>
+          <p class="approach-desc">
+            Conducting thoughtful code reviews, providing technical guidance to engineers, and maintaining transparent communication with product teams.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Education -->
+    <section class="section" aria-labelledby="education-title">
+      <span class="section-label">Foundations</span>
+      <h2 id="education-title" class="section-title">Education</h2>
+
+      <div class="education-list">
+        <div class="education-item">
+          <div>
+            <div class="education-title">Higher Secondary School Computer (Computer Commerce)</div>
+            <div class="education-school">GHSS Kadungapuram</div>
+          </div>
+          <span class="education-year">2019 – 2021</span>
+        </div>
+
+        <div class="education-item">
+          <div>
+            <div class="education-title">High School (SSLC)</div>
+            <div class="education-school">GHSS Kadungapuram</div>
+          </div>
+          <span class="education-year">2018 – 2019</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <span class="section-label">Connect</span>
+      <h2 id="contact-title" class="section-title">Get in Touch</h2>
+
+      <div class="contact-box">
+        <p>
+          I am always interested in discussing new engineering roles, technical challenges, cross-platform architecture, and thoughtful digital products.
+        </p>
+
+        <div class="contact-channels">
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <div class="contact-val">
+              <a href="mailto:mohammedmirsaa@gmail.com" class="inline-link">mohammedmirsaa@gmail.com</a>
+              <button class="copy-btn" onclick="copyText('mohammedmirsaa@gmail.com', 'Email')">Copy</button>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Phone</span>
+            <div class="contact-val">
+              <a href="tel:+918129667453" class="inline-link">+91 8129667453</a>
+              <button class="copy-btn" onclick="copyText('+918129667453', 'Phone number')">Copy</button>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Location</span>
+            <div class="contact-val">
+              <span>Malappuram, Kerala, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <a href="mailto:mohammedmirsaa@gmail.com?subject=Engineering%20Inquiry%20for%20Mohammed%20Mirsa" class="btn btn-primary">
+            Send an Email <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Restrained Editorial Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <span>Mohammed Mirsa · Software Engineer</span>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#work" class="inline-link">Work</a></li>
+        <li><a href="#experience" class="inline-link">Experience</a></li>
+        <li><a href="#contact" class="inline-link">Contact</a></li>
+        <li><a href="javascript:void(0)" onclick="openResumeModal()" class="inline-link">Resume</a></li>
+      </ul>
+
+      <div>
+        <span>2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Case Study Modal -->
+  <div class="modal-overlay" id="detail-modal" role="dialog" aria-modal="true" aria-label="Project Case Study">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Close modal">✕</button>
+      <div id="modal-body">
+        <!-- Injected via JavaScript from verifiedProjects -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Structured Printable Resume Modal -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-label="Executive Resume">
+    <div class="modal-container" style="max-width: 720px;">
+      <button class="modal-close-btn" onclick="closeResumeModal()" aria-label="Close resume view">✕</button>
+      
+      <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <div>
+          <h2 style="font-size: 1.6rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">Mohammed Mirsa</h2>
+          <p style="font-size: 0.92rem; color: var(--accent); font-weight: 500;">Lead Software Engineer · Mobile & Web Application Specialist</p>
+        </div>
+        <button class="btn btn-primary" onclick="triggerPrint()" style="font-size: 0.82rem; padding: 0.4rem 0.85rem;">
+          Print / Save PDF
+        </button>
+      </div>
+
+      <div style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.5rem;">
+        <div><strong>Email:</strong> mohammedmirsaa@gmail.com &nbsp;|&nbsp; <strong>Phone:</strong> +91 8129667453</div>
+        <div><strong>Location:</strong> Malappuram, Kerala, India</div>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.8rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 4px; margin-bottom: 0.6rem;">Summary</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
+          Software Engineer with 4+ years of comprehensive experience in mobile and web application development, specializing in Flutter and Dart. Proficient in building scalable cross-platform apps and managing native Android/iOS deployments. Known for strong research and development skills, fast learning ability, and delivering production-ready solutions efficiently.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.8rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 4px; margin-bottom: 0.6rem;">Experience</h4>
+        
+        <div style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 600; font-size: 0.92rem; color: var(--text-primary);">
+            <span>Lead Software Engineer — M2H Infotech Pvt Ltd</span>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: normal; color: var(--text-secondary);">Present</span>
+          </div>
+          <ul style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.25rem;">
+            <li>Leading mobile application development strategies, overseeing architecture design, and mentoring development teams.</li>
+            <li>Architecting and engineering high-security, scalable cross-platform fintech applications utilizing the Flutter framework.</li>
+            <li>Driving technical research and feasibility studies to optimize app performance and integrate complex payment gateways.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 600; font-size: 0.92rem; color: var(--text-primary);">
+            <span>Software Engineer — Suntech Business Solutions Pvt Ltd</span>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: normal; color: var(--text-secondary);">Aug 2024 – Nov 2024</span>
+          </div>
+          <ul style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.25rem;">
+            <li>Developing mobile and web versions of enterprise CRM and POS applications using Flutter.</li>
+            <li>Building responsive and high-performance cross-platform applications targeting Android, iOS, and web.</li>
+            <li>Collaborating with product and design teams to ensure seamless user experience and functional accuracy.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 600; font-size: 0.92rem; color: var(--text-primary);">
+            <span>Software Engineer — Geojit Technologies PVT LTD</span>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: normal; color: var(--text-secondary);">Jan 2023 – Aug 2024</span>
+          </div>
+          <ul style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.25rem;">
+            <li>Developed and maintained mobile applications using Dart and Flutter for cross-platform development.</li>
+            <li>Managed native Android and iOS mobile applications to ensure optimal performance and user experience.</li>
+            <li>Acted as a key resource in identifying and resolving critical issues, demonstrating problem-solving skills and conducting thorough research.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; font-weight: 600; font-size: 0.92rem; color: var(--text-primary);">
+            <span>Mobile App Developer — Rootsys International</span>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: normal; color: var(--text-secondary);">Sep 2021 – Dec 2022</span>
+          </div>
+          <ul style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.25rem;">
+            <li>Worked as a Mobile App Developer cum Trainer for students, providing hands-on training and guidance.</li>
+            <li>Demonstrated problem-solving skills by finding solutions for various technical issues.</li>
+            <li>Conducted research to stay updated with latest trends and technologies in mobile app development.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.8rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 4px; margin-bottom: 0.6rem;">Key Technical Skills</h4>
+        <p style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary);">
+          <strong>Languages:</strong> Dart, Java, JavaScript, Kotlin, Objective-C<br>
+          <strong>Frameworks:</strong> Flutter, Node.js<br>
+          <strong>Backend & DB:</strong> Firebase, Supabase, MySQL, MongoDB<br>
+          <strong>Tooling & CI/CD:</strong> Azure, Jira, Scrum, Agile, Codemagic, GitHub Actions, Bitrise, Figma, Git, SVN
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+        <button class="btn btn-secondary" onclick="closeResumeModal()">Close</button>
+        <button class="btn btn-primary" onclick="triggerPrint()">Print Resume</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Node -->
+  <div class="toast-msg" id="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
